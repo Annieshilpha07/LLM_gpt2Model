@@ -1,23 +1,31 @@
-
-# Deployment of GUVI GPT Model using Hugging Face
+# Deployment of GUVI GPT-2 Model using Hugging Face
 
 ## Project Overview
 
-This project involves deploying a fine-tuned GPT model, trained on GUVI’s company data, using Hugging Face services. The goal is to create a scalable and secure web application using Streamlit or Gradio, making the model accessible to users over the internet. The deployment leverages Hugging Face spaces resources and a database to store usernames and login times.
+This project involves deploying a fine-tuned GPT-2 model, trained on GUVI-specific data, using Hugging Face services. The goal is to create a scalable and secure web application using Streamlit, making the model accessible to users over the internet. The deployment leverages Hugging Face Spaces resources and a database to store usernames and login times.
 
 ## Huggingface link: [Live Guvi_GPT2 link](https://huggingface.co/spaces/Annie07/Gpt2_Guvi)
+
+## Objectives
+
+1. **Fine-Tune GPT-2 Model:** Adapt the GPT-2 model to GUVI-specific data for accurate text generation relevant to GUVI's context.
+2. **Create a Web Application:** Develop a user-friendly web application using Streamlit to interface with the fine-tuned GPT-2 model.
+3. **Deploy on Hugging Face Spaces:** Ensure the model and application are accessible online using Hugging Face Spaces.
+4. **Ensure Security and Scalability:** Implement secure user authentication and ensure the application can handle multiple users simultaneously.
+5. **Evaluate Performance:** Assess the model’s performance in generating relevant and coherent responses.
+
 ## Skills and Technologies
 
 - Deep Learning
 - Transformers
 - Hugging Face models
 - Large Language Models (LLM)
-- Streamlit or Gradio
+- Streamlit
 - AIOPS (Artificial Intelligence for IT Operations)
 
 ## Problem Statement
 
-Deploy a fine-tuned GPT model using Hugging Face services and create a web application with Streamlit or Gradio to make it accessible online.
+Deploy a fine-tuned GPT-2 model using Hugging Face services and create a web application with Streamlit to make it accessible online.
 
 ### Business Use Cases
 
@@ -38,44 +46,17 @@ Deploy a fine-tuned GPT model using Hugging Face services and create a web appli
 
 ### Infrastructure Setup
 
-1. **Data Storage:** Store the app.py file and necessary files in an Amazon S3 bucket.
-2. **Launch EC2 Instance:** Set up an Amazon EC2 instance with appropriate IAM roles and security groups.
-3. **Environment Setup:** Install required packages (Streamlit, Boto3, transformers, torch) and download the app.py file from S3.
-4. **Deploy Application:** Run the Streamlit application on the EC2 instance.
-5. **Security:** Configure a security group to allow inbound traffic on the app’s port.
-
-## Project Deliverables
-
-- **Source Code:** Complete source code for the Streamlit application.
-- **Documentation:** Detailed setup instructions and usage guide.
-- **Deployment Scripts:** Scripts for environment setup and application deployment.
-- **Project Report:** Summary of the project, approach, and results.
-
-## Project Evaluation Metrics
-
-- **Functionality:** Correctly loads the model and generates coherent responses.
-- **Performance:** Responds to user queries within an acceptable time frame.
-- **Scalability:** Handles multiple users concurrently.
-- **Security:** Implements proper security measures.
-- **Usability:** User-friendly and intuitive interface.
-
-### Prerequisites
-
-- Python 3.7+
-- Streamlit
-- Transformers (Hugging Face)
-- Torch
-
-## Contribution Guidelines
-
-- Follow PEP 8 coding standards.
-- Use Git for version control with regular commits.
-- Document all code with comments and docstrings.
-- Include unit tests to verify functionality.
-- Manage Hugging Face services resources to avoid unnecessary costs.
+1. **Data Storage:** Store the necessary files in a secure storage service in mysql database.
+2. **Environment Setup:** Install required packages (Streamlit, transformers, torch) and set up the Streamlit application.
+3. **Deploy Application:** Run the Streamlit application using Hugging Face Spaces.
+4. **Security:** Implement proper authentication and authorization mechanisms.
 
 ## Disclaimer
 
-GUVI is not responsible for any outcomes or conclusions derived from the use of this GPT model. The model and the web application are provided as-is, without any guarantees of performance, accuracy, or suitability for any specific purpose.
+GUVI is not responsible for any outcomes or conclusions derived from the use of this GPT-2 model. The model and the web application are provided as-is, without any guarantees of performance, accuracy, or suitability for any specific purpose.
+
+## Conclusion
+
+This project successfully deployed a fine-tuned GPT-2 model using Streamlit and Hugging Face Spaces, making it accessible and user-friendly. Fine-tuning the model on GUVI-specific data and creating a web application demonstrated the potential of integrating AI models into web applications for various business use cases. The deployment enhances operational efficiency and user experience by automating tasks and generating content.
 
 ---
