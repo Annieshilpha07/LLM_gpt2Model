@@ -5,7 +5,7 @@
 
 This project involves deploying a fine-tuned GPT model, trained on GUVI’s company data, using Hugging Face services. The goal is to create a scalable and secure web application using Streamlit or Gradio, making the model accessible to users over the internet. The deployment leverages Hugging Face spaces resources and a database to store usernames and login times.
 
-## Hugging face link: https://huggingface.co/spaces/Annie07/LLM_gpt2
+## Huggingface Live GPT link: (https://huggingface.co/spaces/Annie07/Gpt2_Guvi)
 ## Skills and Technologies
 
 - Deep Learning
