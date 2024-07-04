@@ -5,7 +5,7 @@
 
 This project involves deploying a fine-tuned GPT model, trained on GUVI’s company data, using Hugging Face services. The goal is to create a scalable and secure web application using Streamlit or Gradio, making the model accessible to users over the internet. The deployment leverages Hugging Face spaces resources and a database to store usernames and login times.
 
-## Huggingface Live GPT link: (https://huggingface.co/spaces/Annie07/Gpt2_Guvi)
+## Huggingface link: [Live Guvi_GPT2 link](https://huggingface.co/spaces/Annie07/Gpt2_Guvi)
 ## Skills and Technologies
 
 - Deep Learning
@@ -65,18 +65,6 @@ Deploy a fine-tuned GPT model using Hugging Face services and create a web appli
 - Streamlit
 - Transformers (Hugging Face)
 - Torch
-
-### Running the Application
-
-1. Run the Streamlit application:
-   ```bash
-   streamlit run app.py
-   ```
-
-2. Access the application in your web browser:
-   ```url
-   http://localhost:8501
-   ```
 
 ## Contribution Guidelines
 
