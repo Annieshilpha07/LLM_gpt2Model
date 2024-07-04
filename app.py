@@ -46,8 +46,8 @@ with col2:
 connection = mysql.connector.connect(
     host="gateway01.ap-southeast-1.prod.aws.tidbcloud.com",
     port=4000,
-    user="3D17UR5b2za812G.root",
-    password="hEVXzK9GcWZmgaTB"
+    user="--------", # Enter your user name
+    password="---------"  # Enter your Password
 )
 
 mycursor = connection.cursor(buffered=True)
