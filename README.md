@@ -46,10 +46,14 @@ Deploy a fine-tuned GPT-2 model using Hugging Face services and create a web app
 
 ### Infrastructure Setup
 
-1. **Data Storage:** Store the necessary files in a secure storage service in mysql database.
-2. **Environment Setup:** Install required packages (Streamlit, transformers, torch) and set up the Streamlit application.
-3. **Deploy Application:** Run the Streamlit application using Hugging Face Spaces.
-4. **Security:** Implement proper authentication and authorization mechanisms.
+1. **Database Connection**: Connects to MySQL and creates necessary tables.
+2. **User Authentication**: Handles sign-up, login, and password reset with bcrypt-secured passwords.
+3. **Model Loading**: Loads the fine-tuned GPT-2 model and tokenizer from Hugging Face, using GPU if available.
+4. **Text Generation**: Allows users to input text and generate responses with customizable parameters.
+5. **Session Management**: Maintains session states for sign-up success, login status, and current page.
+6. **UI Elements**: Utilizes Streamlit’s layout features for an interactive and appealing interface, including disclaimers and guidelines.
+7. **Deploy Application:** Run the Streamlit application using Hugging Face Spaces.
+8. **Security:** Implement proper authentication and authorization mechanisms.
 
 ## Disclaimer
 
